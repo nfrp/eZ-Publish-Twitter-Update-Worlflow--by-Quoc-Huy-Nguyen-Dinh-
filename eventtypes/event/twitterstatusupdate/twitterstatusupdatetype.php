@@ -192,7 +192,6 @@ class TwitterStatusUpdateType extends eZWorkflowEventType
            if ( $twitterDebugOutput == 'enabled' )
                eZLog::write( "About to send this Twitter status: {$tweet}" );
 
-           /*
            $response = $twitter->updateStatus( $tweet, 'xml' );
            if ( $response->isError() )
            {
@@ -206,7 +205,6 @@ class TwitterStatusUpdateType extends eZWorkflowEventType
                if ( $twitterDebugOutput == 'enabled' )
                    eZLog::write( "Twitter status updated: $tweet" );
            }
-           */
        }
        catch( Arc90_Service_Twitter_Exception $e )
        {
