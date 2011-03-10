@@ -1,0 +1,8 @@
+- Untar and activate the extension
+- edit the config.php file at the root folder of your eZ installation and add this line at the end:
+  ini_set( 'include_path', ini_get('include_path'). ':/var/www/default/extension/mytwitter/lib' );
+- add an attribute named 'twitterstatus' with max 120 chars to any content class you want to add the Twitter update feature
+- copy & customize extension/mytwitter/settings/mytwitter.ini for your siteaccess
+- create a workflow: Twitter Update and link it to the Twitter Status Update event
+- if not already done, create an After Publish workflow, set it with a Multiplexer executing the previous workflow for conditions of your choice
+- link the After Publish workflow to the post publish trigger
