@@ -26,7 +26,6 @@ error_reporting( E_ALL | E_NOTICE );
 
 // Go back to eZ root folder
 require 'autoload.php';
-ini_set( 'include_path', ini_get( 'include_path' ) . PATH_SEPARATOR . './extension/mytwitter/lib' );
 //require_once( 'extension/mytwitter/lib/oauth/twitterOAuth.php' );
 
 $cli = eZCLI::instance();

@@ -21,8 +21,7 @@
 /**
  * @see Arc90_Service_Twitter_Response
  */
-// nfrp addition :
-// require_once 'Arc90/Service/Twitter/Response.php';
+require_once 'Arc90/Service/Twitter/Response.php';
 
 /**
  * Arc90_Service_Twitter provides methods for interacting with the {@link http://twitter.com Twitter} API.
@@ -1489,8 +1488,7 @@ class Arc90_Service_Twitter
     {
 	if ($this->use_oauth)
 	{
-	    // nfrp addition
-	    // require_once('oauth/twitterOAuth.php');
+	    require_once('oauth/twitterOAuth.php');
 
 	    /* Create TwitterOAuth with app key/secret and user access key/secret */
 	    $to = new TwitterOAuth($this->oauth_consumer_key, $this->oauth_consumer_secret, $this->user_token, $this->user_secret);

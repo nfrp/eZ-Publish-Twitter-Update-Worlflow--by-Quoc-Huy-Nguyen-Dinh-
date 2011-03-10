@@ -21,8 +21,7 @@
 /**
  * @see Arc90_Service_Twitter_Exception
  */
-// nfrp addition :
-// require_once 'Arc90/Service/Twitter/Exception.php';
+require_once 'Arc90/Service/Twitter/Exception.php';
 
 /**
  * Arc90_Service_Twitter_Response represents a response to a {@link http://twitter.com Twitter} API call.
