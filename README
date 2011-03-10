@@ -1,0 +1,5 @@
+Author: Quoc-Huy Nguyen Dinh (contact@qhphotography.com)
+Description: This is an example workflow extension as part of a tutorial on eZ Publish workflow events.
+Credits:
+Thanks to Yemkay for the Arc-twitteroauth library: http://github.com/yemkay/arc90-twitteroauth
+Thanks to Konstantin Kovshenin for the trick with Twitter OAuth for PHP: http://kovshenin.com/archives/twitter-api-pin-based-oauth-php/
