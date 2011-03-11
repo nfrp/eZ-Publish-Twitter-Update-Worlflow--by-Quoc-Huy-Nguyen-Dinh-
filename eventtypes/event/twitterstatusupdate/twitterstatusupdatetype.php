@@ -173,12 +173,12 @@ class TwitterStatusUpdateType extends eZWorkflowEventType
                // Was the <message> placeholder properly used in the format ?
                if ( ( $pos = strpos( $tweetFormat, self::DEFAULT_TWEET_FORMAT ) ) !== false )
                {
-                   // If so, replace is by the dynamic content
+                   // If so, replace it by the dynamic content
                    $tweet = str_replace( self::DEFAULT_TWEET_FORMAT, $twitterStatus . ' : ' . $tinyURL , $tweetFormat );
                }
                else
                {
-                   // If not, make sure the dyanmice content + URL are sent through anyways, and
+                   // If not, make sure the dynamic content + URL are sent through anyways, and
                    // get back in touch with the person who configured the workflow event, she missed one thing :)
                    $tweet = "$twitterStatus : $tinyURL";
                }
